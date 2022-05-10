@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="2" failed="0" ignored="0" total="2" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Search-Module" duration-ms="1118" started-at="2022-05-01T08:45:36 GMT" finished-at="2022-05-01T08:45:37 GMT">
+    <groups>
+    </groups>
+    <test name="Search-for-Java" duration-ms="911" started-at="2022-05-01T08:45:36 GMT" finished-at="2022-05-01T08:45:36 GMT">
+      <class name="com.searchModule.Test.SearchTest">
+        <test-method status="FAIL" signature="setDriver()[pri:0, instance:com.searchModule.Test.SearchTest@6321e813]" name="setDriver" is-config="true" duration-ms="890" started-at="2022-05-01T08:45:36 GMT" finished-at="2022-05-01T08:45:36 GMT">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: Unable to create session from {
+  "desiredCapabilities": {
+    "browserName": "firefox",
+    "server:CONFIG_UUID": "85c982fa-7e13-43ef-a4e1-4c236e608ee6",
+    "moz:debuggerAddress": true,
+    "moz:firefoxOptions": {
+    },
+    "acceptInsecureCerts": true
+  },
+  "capabilities": {
+    "firstMatch": [
+      {
+        "acceptInsecureCerts": true,
+        "browserName": "firefox",
+        "moz:debuggerAddress": true,
+        "moz:firefoxOptions": {
+        },
+        "server:CONFIG_UUID": "85c982fa-7e13-43ef-a4e1-4c236e608ee6"
+      }
+    ]
+  }
+}
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:13:22.693Z'
+System info: host: 'c299ccda135d', ip: '172.18.0.4', os.name: 'Linux', os.arch: 'amd64', os.version: '5.10.16.3-microsoft-standard-WSL2', java.version: '1.8.0_181'
+Driver info: driver.version: unknown
+Build info: version: '4.1.3', revision: '7b1ebf28ef'
+System info: host: 'c886c4299e84', ip: '172.17.0.2', os.name: 'Linux', os.arch: 'amd64', os.version: '5.10.16.3-microsoft-standard-WSL2', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}], desiredCapabilities=Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}}]
+Capabilities {}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Unable to create session from {
+  "desiredCapabilities": {
+    "browserName": "firefox",
+    "server:CONFIG_UUID": "85c982fa-7e13-43ef-a4e1-4c236e608ee6",
+    "moz:debuggerAddress": true,
+    "moz:firefoxOptions": {
+    },
+    "acceptInsecureCerts": true
+  },
+  "capabilities": {
+    "firstMatch": [
+      {
+        "acceptInsecureCerts": true,
+        "browserName": "firefox",
+        "moz:debuggerAddress": true,
+        "moz:firefoxOptions": {
+        },
+        "server:CONFIG_UUID": "85c982fa-7e13-43ef-a4e1-4c236e608ee6"
+      }
+    ]
+  }
+}
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:13:22.693Z'
+System info: host: 'c299ccda135d', ip: '172.18.0.4', os.name: 'Linux', os.arch: 'amd64', os.version: '5.10.16.3-microsoft-standard-WSL2', java.version: '1.8.0_181'
+Driver info: driver.version: unknown
+Build info: version: '4.1.3', revision: '7b1ebf28ef'
+System info: host: 'c886c4299e84', ip: '172.17.0.2', os.name: 'Linux', os.arch: 'amd64', os.version: '5.10.16.3-microsoft-standard-WSL2', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}], desiredCapabilities=Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}}]
+Capabilities {}
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:84)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:62)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:248)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:164)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:146)
+at com.Tests.BaseTest.setDriver(BaseTest.java:37)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:65)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:381)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:319)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:645)
+at org.testng.TestRunner.beforeRun(TestRunner.java:634)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at org.testng.TestNG.privateMain(TestNG.java:1407)
+at org.testng.TestNG.main(TestNG.java:1371)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setDriver -->
+        <test-method status="SKIP" signature="search(java.lang.String)[pri:0, instance:com.searchModule.Test.SearchTest@6321e813]" name="search" duration-ms="0" started-at="2022-05-01T08:45:36 GMT" finished-at="2022-05-01T08:45:36 GMT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Java]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: Unable to create session from {
+  "desiredCapabilities": {
+    "browserName": "firefox",
+    "server:CONFIG_UUID": "85c982fa-7e13-43ef-a4e1-4c236e608ee6",
+    "moz:debuggerAddress": true,
+    "moz:firefoxOptions": {
+    },
+    "acceptInsecureCerts": true
+  },
+  "capabilities": {
+    "firstMatch": [
+      {
+        "acceptInsecureCerts": true,
+        "browserName": "firefox",
+        "moz:debuggerAddress": true,
+        "moz:firefoxOptions": {
+        },
+        "server:CONFIG_UUID": "85c982fa-7e13-43ef-a4e1-4c236e608ee6"
+      }
+    ]
+  }
+}
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:13:22.693Z'
+System info: host: 'c299ccda135d', ip: '172.18.0.4', os.name: 'Linux', os.arch: 'amd64', os.version: '5.10.16.3-microsoft-standard-WSL2', java.version: '1.8.0_181'
+Driver info: driver.version: unknown
+Build info: version: '4.1.3', revision: '7b1ebf28ef'
+System info: host: 'c886c4299e84', ip: '172.17.0.2', os.name: 'Linux', os.arch: 'amd64', os.version: '5.10.16.3-microsoft-standard-WSL2', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}], desiredCapabilities=Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}}]
+Capabilities {}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Unable to create session from {
+  "desiredCapabilities": {
+    "browserName": "firefox",
+    "server:CONFIG_UUID": "85c982fa-7e13-43ef-a4e1-4c236e608ee6",
+    "moz:debuggerAddress": true,
+    "moz:firefoxOptions": {
+    },
+    "acceptInsecureCerts": true
+  },
+  "capabilities": {
+    "firstMatch": [
+      {
+        "acceptInsecureCerts": true,
+        "browserName": "firefox",
+        "moz:debuggerAddress": true,
+        "moz:firefoxOptions": {
+        },
+        "server:CONFIG_UUID": "85c982fa-7e13-43ef-a4e1-4c236e608ee6"
+      }
+    ]
+  }
+}
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:13:22.693Z'
+System info: host: 'c299ccda135d', ip: '172.18.0.4', os.name: 'Linux', os.arch: 'amd64', os.version: '5.10.16.3-microsoft-standard-WSL2', java.version: '1.8.0_181'
+Driver info: driver.version: unknown
+Build info: version: '4.1.3', revision: '7b1ebf28ef'
+System info: host: 'c886c4299e84', ip: '172.17.0.2', os.name: 'Linux', os.arch: 'amd64', os.version: '5.10.16.3-microsoft-standard-WSL2', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}], desiredCapabilities=Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}}]
+Capabilities {}
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:84)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:62)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:248)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:164)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:146)
+at com.Tests.BaseTest.setDriver(BaseTest.java:37)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:65)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:381)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:319)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:645)
+at org.testng.TestRunner.beforeRun(TestRunner.java:634)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at org.testng.TestNG.privateMain(TestNG.java:1407)
+at org.testng.TestNG.main(TestNG.java:1371)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- search -->
+        <test-method status="SKIP" signature="closeBrow()[pri:0, instance:com.searchModule.Test.SearchTest@6321e813]" name="closeBrow" is-config="true" duration-ms="0" started-at="2022-05-01T08:45:36 GMT" finished-at="2022-05-01T08:45:36 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrow -->
+      </class> <!-- com.searchModule.Test.SearchTest -->
+    </test> <!-- Search-for-Java -->
+    <test name="Search-for-Qa" duration-ms="163" started-at="2022-05-01T08:45:36 GMT" finished-at="2022-05-01T08:45:37 GMT">
+      <class name="com.searchModule.Test.SearchTest">
+        <test-method status="FAIL" signature="setDriver()[pri:0, instance:com.searchModule.Test.SearchTest@5f282abb]" name="setDriver" is-config="true" duration-ms="162" started-at="2022-05-01T08:45:36 GMT" finished-at="2022-05-01T08:45:37 GMT">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: Unable to create session from {
+  "desiredCapabilities": {
+    "browserName": "firefox",
+    "server:CONFIG_UUID": "85c982fa-7e13-43ef-a4e1-4c236e608ee6",
+    "moz:debuggerAddress": true,
+    "moz:firefoxOptions": {
+    },
+    "acceptInsecureCerts": true
+  },
+  "capabilities": {
+    "firstMatch": [
+      {
+        "acceptInsecureCerts": true,
+        "browserName": "firefox",
+        "moz:debuggerAddress": true,
+        "moz:firefoxOptions": {
+        },
+        "server:CONFIG_UUID": "85c982fa-7e13-43ef-a4e1-4c236e608ee6"
+      }
+    ]
+  }
+}
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:13:22.693Z'
+System info: host: 'c299ccda135d', ip: '172.18.0.4', os.name: 'Linux', os.arch: 'amd64', os.version: '5.10.16.3-microsoft-standard-WSL2', java.version: '1.8.0_181'
+Driver info: driver.version: unknown
+Build info: version: '4.1.3', revision: '7b1ebf28ef'
+System info: host: 'c886c4299e84', ip: '172.17.0.2', os.name: 'Linux', os.arch: 'amd64', os.version: '5.10.16.3-microsoft-standard-WSL2', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}], desiredCapabilities=Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}}]
+Capabilities {}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Unable to create session from {
+  "desiredCapabilities": {
+    "browserName": "firefox",
+    "server:CONFIG_UUID": "85c982fa-7e13-43ef-a4e1-4c236e608ee6",
+    "moz:debuggerAddress": true,
+    "moz:firefoxOptions": {
+    },
+    "acceptInsecureCerts": true
+  },
+  "capabilities": {
+    "firstMatch": [
+      {
+        "acceptInsecureCerts": true,
+        "browserName": "firefox",
+        "moz:debuggerAddress": true,
+        "moz:firefoxOptions": {
+        },
+        "server:CONFIG_UUID": "85c982fa-7e13-43ef-a4e1-4c236e608ee6"
+      }
+    ]
+  }
+}
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:13:22.693Z'
+System info: host: 'c299ccda135d', ip: '172.18.0.4', os.name: 'Linux', os.arch: 'amd64', os.version: '5.10.16.3-microsoft-standard-WSL2', java.version: '1.8.0_181'
+Driver info: driver.version: unknown
+Build info: version: '4.1.3', revision: '7b1ebf28ef'
+System info: host: 'c886c4299e84', ip: '172.17.0.2', os.name: 'Linux', os.arch: 'amd64', os.version: '5.10.16.3-microsoft-standard-WSL2', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}], desiredCapabilities=Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}}]
+Capabilities {}
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:84)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:62)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:248)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:164)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:146)
+at com.Tests.BaseTest.setDriver(BaseTest.java:37)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:65)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:381)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:319)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:645)
+at org.testng.TestRunner.beforeRun(TestRunner.java:634)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at org.testng.TestNG.privateMain(TestNG.java:1407)
+at org.testng.TestNG.main(TestNG.java:1371)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setDriver -->
+        <test-method status="SKIP" signature="closeBrow()[pri:0, instance:com.searchModule.Test.SearchTest@5f282abb]" name="closeBrow" is-config="true" duration-ms="0" started-at="2022-05-01T08:45:37 GMT" finished-at="2022-05-01T08:45:37 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrow -->
+        <test-method status="SKIP" signature="search(java.lang.String)[pri:0, instance:com.searchModule.Test.SearchTest@5f282abb]" name="search" duration-ms="0" started-at="2022-05-01T08:45:37 GMT" finished-at="2022-05-01T08:45:37 GMT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[QA]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: Unable to create session from {
+  "desiredCapabilities": {
+    "browserName": "firefox",
+    "server:CONFIG_UUID": "85c982fa-7e13-43ef-a4e1-4c236e608ee6",
+    "moz:debuggerAddress": true,
+    "moz:firefoxOptions": {
+    },
+    "acceptInsecureCerts": true
+  },
+  "capabilities": {
+    "firstMatch": [
+      {
+        "acceptInsecureCerts": true,
+        "browserName": "firefox",
+        "moz:debuggerAddress": true,
+        "moz:firefoxOptions": {
+        },
+        "server:CONFIG_UUID": "85c982fa-7e13-43ef-a4e1-4c236e608ee6"
+      }
+    ]
+  }
+}
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:13:22.693Z'
+System info: host: 'c299ccda135d', ip: '172.18.0.4', os.name: 'Linux', os.arch: 'amd64', os.version: '5.10.16.3-microsoft-standard-WSL2', java.version: '1.8.0_181'
+Driver info: driver.version: unknown
+Build info: version: '4.1.3', revision: '7b1ebf28ef'
+System info: host: 'c886c4299e84', ip: '172.17.0.2', os.name: 'Linux', os.arch: 'amd64', os.version: '5.10.16.3-microsoft-standard-WSL2', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}], desiredCapabilities=Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}}]
+Capabilities {}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Unable to create session from {
+  "desiredCapabilities": {
+    "browserName": "firefox",
+    "server:CONFIG_UUID": "85c982fa-7e13-43ef-a4e1-4c236e608ee6",
+    "moz:debuggerAddress": true,
+    "moz:firefoxOptions": {
+    },
+    "acceptInsecureCerts": true
+  },
+  "capabilities": {
+    "firstMatch": [
+      {
+        "acceptInsecureCerts": true,
+        "browserName": "firefox",
+        "moz:debuggerAddress": true,
+        "moz:firefoxOptions": {
+        },
+        "server:CONFIG_UUID": "85c982fa-7e13-43ef-a4e1-4c236e608ee6"
+      }
+    ]
+  }
+}
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:13:22.693Z'
+System info: host: 'c299ccda135d', ip: '172.18.0.4', os.name: 'Linux', os.arch: 'amd64', os.version: '5.10.16.3-microsoft-standard-WSL2', java.version: '1.8.0_181'
+Driver info: driver.version: unknown
+Build info: version: '4.1.3', revision: '7b1ebf28ef'
+System info: host: 'c886c4299e84', ip: '172.17.0.2', os.name: 'Linux', os.arch: 'amd64', os.version: '5.10.16.3-microsoft-standard-WSL2', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}], desiredCapabilities=Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}}]
+Capabilities {}
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:84)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:62)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:248)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:164)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:146)
+at com.Tests.BaseTest.setDriver(BaseTest.java:37)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:65)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:381)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:319)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:645)
+at org.testng.TestRunner.beforeRun(TestRunner.java:634)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at org.testng.TestNG.privateMain(TestNG.java:1407)
+at org.testng.TestNG.main(TestNG.java:1371)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- search -->
+      </class> <!-- com.searchModule.Test.SearchTest -->
+    </test> <!-- Search-for-Qa -->
+  </suite> <!-- Search-Module -->
+</testng-results>

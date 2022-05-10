@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Book Flight" parallel="tests">
+    <test name="Book Flight for 2 passengers">
+        <parameter name="noOfPassenger" value="2"/>
+        <classes>
+            <class name="com.newtous.tests.BookFlightTest"/>
+        </classes>
+    </test>
+    <test name="Book Flight for 3 passengers">
+        <parameter name="noOfPassenger" value="3"/>
+        <classes>
+            <class name="com.newtous.tests.BookFlightTest"/>
+        </classes>
+    </test>
+    <test name="Book Flight for 4 passengers">
+        <parameter name="noOfPassenger" value="4"/>
+        <classes>
+            <class name="com.newtous.tests.BookFlightTest"/>
+        </classes>
+    </test>
+</suite>
